@@ -1,5 +1,7 @@
 1. In my opinion, clean code is code that easy to implement, well organized, and less complicated. The reason why it's important is to keep the code DRY which can avoid unecessary mistakes and for other users can easily implement the code in order to fix it if there are any errors.
 
+2. We could use customers cell phone's plan that can be relied on computer. If the code was not created to an acceptable standard, then consumers select plans, check paying bills, and reviewing pay history documents which could cause them having bad experience with the websites which could make them quit the plans somehow
+
 3.  FUNCTION do(x, y)               // Creating a new function
  IF y = "F" THEN               // Check if y is equal "F"
  SET z to (x-32) * (5/9)       // Formula to convert degrees fahrenheit to celsius
@@ -12,12 +14,12 @@ END FUNCTION
 
 this can't be a clean code. We can shorten this code.
 
-FUNCTION degreeConvert(x, y)               // name this function degreeConvert
- IF y = "F" THEN               // Check if y is equal "F"
-  call z = (x-32) * (5/9)            // print the conversion result                               
- ELSE IF y = "C" THEN          // If y not equal to "F", check if equal to "C"
- call z = x * 1.8000 + 32.00       // print conversion result
- END IF
+FUNCTION FarenheitConvertion             
+  CALL Farenheit = (Celcius-32) * (5/9) 
+END FUNCTION
+
+FUNCTION CelciusConvertion
+  CALL Celcius = (Farenheit * 1.8000 + 32.00)
 END FUNCTION
 
 4. FUNCTION calcPercent(sum, total)

@@ -1,0 +1,43 @@
+1. The Stack data structure arranges elements in LIFO priority and Queue data structure arranges elements in FIFO priority.
+
+2. Both of them handle the data flow. Queues are more common.
+
+3. I'd use the LIFO for the UNDO because it'll replace the last element that I've just type
+  - I'd use the FIFO for the REDO because it'll be the first element created and it's the first one to leave. It'd be used to add a change back to the element that's already done.
+
+PROGRAMMING QUESTIONS
+
+1. function reverseString(str) {
+  newarr = str.split("");
+  result = [];
+  x = newarr.length;
+  for (i = x; i > -1; i--) {
+    result.push(newarr[i]);
+  }
+  str = result.join("");
+  return str;
+}
+reverseString("Bloc!");
+
+2. 
+CLASS Stack
+ FUNCTION pop(queue)
+   ENTER queue array
+   CALL delete function
+   FOR to loop elements in the array
+   PUSH elements to the array
+   CALL .pop to delete the last element
+   RETURN new array
+ END FUNCTION
+END CLASS
+
+3. 
+CLASS QUEUE
+ FUNCTION enqueue(element)
+ THEN push items(element)
+ END FUNCTION
+
+ FUNCTION dequeue
+THEN shift items()
+ END FUNCTION
+END CLASS

@@ -1,0 +1,75 @@
+1.
+pros :
+
+can be increase/decrease the number of nodes (dynamic allocation)
+can use multiple data types as elements
+so basically its advanced than arrays.
+cons :
+
+consumes more memory than arrays
+need to clear memory once we done with it.
+handling pointers is a bit tricky compared to arrays.. (but its needed for real time usage)
+
+
+2. All (most) automobiles in real life are the essentially same thing; an automobile has an Engine, you can start() it, you can make the car go(), stop() and so on. An automobile would typically have a maximum passenger capacity but it would differ between a Bus and a SportsCar, which are both automobiles.
+
+PROGRAMMING QUESTIONS
+
+LinkedList.prototype.push = function(element) {
+ SET node = {
+   value: element,
+   current node = head
+ }
+
+ IF the head node does not exist
+   THEN SET head to node
+ ELSE
+   SET current node to current.next
+   SET current.next to node
+ }
+}
+
+
+2. 
+SET node = {
+  value: element,
+  current node = head
+}
+
+IF the head and the head.next is the same
+THEN delete the head.next
+
+ELSE IF the current node and the current.next
+THEN delete the current.next
+
+ELSE console.log('No duplicate')
+
+
+
+3. 
+
+reverse() {
+    
+	let current = this.head;
+    
+	let nextNode = current;
+    
+	let previous = null
+
+
+    
+while (current) {
+      
+	nextNode = current.next;
+      
+	current.next = previous;
+      
+	previous = current;
+      
+	current = nextNode;
+    }
+
+    
+	  this.head = previous;
+  }
+}

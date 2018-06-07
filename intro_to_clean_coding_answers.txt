@@ -16,10 +16,12 @@ this can't be a clean code. We can shorten this code.
 
 FUNCTION FarenheitConvertion             
   CALL Farenheit = (Celcius-32) * (5/9) 
+  PRINT Farenheit
 END FUNCTION
 
 FUNCTION CelciusConvertion
   CALL Celcius = (Farenheit * 1.8000 + 32.00)
+  PRINT Celcius
 END FUNCTION
 
 4. FUNCTION calcPercent(sum, total)

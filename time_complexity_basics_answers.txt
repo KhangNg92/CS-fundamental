@@ -1,0 +1,43 @@
+1. What is time complexity and what is its relation to algorithms?
+ Time Complexity is expressed as a function that estimates the time it takes to execute a program. Its relation to algorithm is the f(n) will show the time throughout the growth of the input size
+
+2. What is runtime?
+ Runtime is similar to time complexity. It will estimate the time for a program to execute
+
+3. How is the runtime of an algorithm calculated?
+  The runtime will get the total of instructions the algorithm execute as a function of the size of its input, then simplify the expression to the largest term and drop any constants
+
+
+4. Name the six types of algorithm growth rates we saw in this checkpoint and list them in order of most efficient to least efficient. Now Google another algorithmic growth rate not covered and place it in the correct spot in your list.
+    - Constant Growth Rate O(1)
+    - Logarithmic Growth Rate O(log n)
+    - Linear Growth Rate O(n)
+    - Log-Linear Growth Rate O(n log n)
+    - Quadratic Growth Rate O(n^2)
+    - Exponential Growth Rate O(2^n)
+    - Cubic Growth Rate O(n3)
+
+5. Choose one of the algorithmic growth rates from the last question and make a comparison to a real-life situation.
+- Constant Growth Rate - a movie theater, the ticket checker will only get 1 person per time no matter how many people go with you.
+
+6. Determine the time complexity of the following snippet of code. It is commonly known as a linear search.
+   
+   FUNCTION linearSearch(array, target)
+    FOR each number in the array (n)
+    IF number = target THEN (1)
+        RETURN true (1)
+    END IF
+    END FOR
+    RETURN false
+    END FUNCTION
+
+ n + 1 + 1 = O(n)
+
+7. Determine the time complexity of the following snippet of code.
+ n * n + 1 = n^2 + 1 = O(n^2)
+
+8. Determine the time complexity of the following snippet of code. It is commonly known as the Fibonacci sequence.
+ O(2^n)
+
+9. Out of the code snippets you just saw, which is the most time efficient?
+I think the most efficient way is the linear search which only require simply n for the O function

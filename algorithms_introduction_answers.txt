@@ -1,0 +1,40 @@
+1. Using proper pseudo-code, describe the following primitive algorithms:
+
+- Making coffee;
+    FUNCTION makingCoffee()
+        PUT coffe into basket
+	PUT hot water into the coffee makeer
+	THEN press on button
+    END FUNCTION
+
+- Washing dishes:
+
+	FUNCTION washDishes
+       WHILE put soapy in to dishes
+            CALL rinse the one with soapy
+	END WHILE
+       REPEAT the process
+	UNTIL finish        
+    END FUNCTION
+
+ - A choice of your own:
+
+	FUNCTION solveCode()
+	  WHILE writing algorithm for the code
+	   CALL thinking about what it looks like in Javascript
+	  ENDWHILE
+	  WHILE trying it on Javascript
+ 	   IF everything's fine 
+	   RETURN done
+	   ELSE console.log each function to see the errors
+	  END IF
+	  END WHILE
+
+2. As with the knot algorithm, there may be more than one way to solve the problem. It is essential to try to pick the best algorithm for a situation. Name three companies who created an algorithm that made them successful, e.g., Google's search algorithm. It doesn't need to be a tech example (such as a recipe or manufacturing a product). Google's algorithm produces more relevant results than other search engines; what about each of your cases make them stand out?
+
+ 	- Facebook: the likes, shares and comments which make it stand out with other social media apps.
+	- Instagram: the picture's editor algorithm.
+	- Youtube: Upload videos and edit video online.
+
+3. Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
+ - An efficiency algorithm can be considered to minimize resource usage. Efficient algorithm can shorten the code usage and easier to understand

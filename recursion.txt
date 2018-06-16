@@ -1,0 +1,58 @@
+1. Define and compare recursion and iteration.
+
+ - Recursion is the statement in a body of function calls the function itself. Recursion reduces the size of the code.Recursion is always applied to functions.
+
+ - Iteration allows the set of instructions to be repeatedly executed. Iteration makes the code longer. Iteration is applied to iteration statements or "loops".
+
+2. Name five algorithms that are commonly implemented by recursion.
+
+ - The factorial function, tower of Hanoi, Russian dolls (the one you open till you get the smallest doll), binary search, 
+
+3. When should you use recursion, and when should you avoid recursion? 
+    - use recursion when the algorithm can be defined as a combination of sub-results starting with known cases 
+    - avoid recursion when a simple pass over the collection can accomplish the task 
+ 
+4. Compare the recursive and iterative solutions to the three algorithms from the checkpoint (Factorial, Maximum, and Fibonacci). What is similar, and what is different?
+    - All of them solve numbers
+    - Fibonacci has a known algorithm with a pre-defined set of possible answers
+    - Maximum and factorial are variable based on the parameter
+
+5. Given a multi-dimensional collection (such as an array) where the number of dimensions is unknown, write a recursive algorithm to count the number of items in the entire collection.
+
+   FUNCTION countItems(array1 , array2) {
+        let count = 0;
+        for (let i=0; i<array1.length; i++) {
+            count++;
+        for (var j = 0; j < arr2.length; j++{
+	    count ++;
+	}
+	countItems(arr1, arr2)
+
+6. A palindrome is a word or phrase whose spelling is the same either direction (e.g., racecar). Write a recursive algorithm to determine if a given word or phrase is a palindrome.
+	function palindrome(str) {
+ var re = /[^A-Za-z0-9]/g;
+ str = str.toLowerCase().replace(re, '');
+ var len = str.length;
+ for (var i = 0; i < len/2; i++) {
+   if (str[i] !== str[len - 1 - i]) {
+       return false;
+   }
+ }
+ return true;
+}
+palindrome('khang');
+
+
+7.
+
+ FUNCTION findKitty (houses, kitty)
+        IF houses IS EMPTY THEN 
+            RETURN ERROR
+        ELSE
+            IF cat IS FOUND in FIRST house
+                RETURN house
+            ELSE
+                CALL keepFindingCat from entireHouses
+            END IF
+        END IF
+    END FUNCTION

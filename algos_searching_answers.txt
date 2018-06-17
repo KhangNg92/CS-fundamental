@@ -1,0 +1,49 @@
+1. What is a real-life scenario that uses linear search?
+ - search for a student in a class
+
+2. What is a real-life scenario that uses binary search?
+ - search a company name in an index book.
+
+3. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+ - 7
+
+4. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+ - 2
+
+5. Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning.
+ - I would definitely use the linear search since it's unsorted
+
+6. Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning.
+ - I would definitely use the binary search since it's sorted
+
+PROGRAMMING QUESTION:
+
+1.  You and a friend have set a wager to see who can find the word "Albatross" in the dictionary the fastest. Write a program to allow you to win the bet.
+
+    FUNCTION wordLookup (dictionary,word) 
+ 	SET firstword and lastword;       
+	IF lastword < firstword THEN
+            RETURN "can't find"
+
+        SET midWord to ROUNDDOWN((lastWord-firstWord) / 2) + firstWord
+        IF dictionary[midWord] = word THEN
+            RETURN midWord
+        ELSE IF word < dictionary[midWord].word THEN
+            CALL wordLookup WITH dictionary, word, firstWord, midWord - 1 RETURNING result
+            RETURN result
+
+        ELSE
+            CALL findWord WITH dictionary, word, midWord + 1, lastWord RETURNING result
+            RETURN result
+            
+    END FUNCTION
+
+2. 
+
+ FOR each fish in the tank
+   IF fish = white-spotted goldfish THEN
+     RETURN white-spotted goldfish
+   END IF
+ END FOR
+
+ RETURN NOT FOUND
